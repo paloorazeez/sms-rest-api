@@ -1,0 +1,60 @@
+-- MySQL dump 10.13  Distrib 8.0.13, for macos10.14 (x86_64)
+--
+-- Host: localhost    Database: sms
+-- ------------------------------------------------------
+-- Server version	8.0.13
+
+/*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
+/*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
+/*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
+ SET NAMES utf8 ;
+/*!40103 SET @OLD_TIME_ZONE=@@TIME_ZONE */;
+/*!40103 SET TIME_ZONE='+00:00' */;
+/*!40014 SET @OLD_UNIQUE_CHECKS=@@UNIQUE_CHECKS, UNIQUE_CHECKS=0 */;
+/*!40014 SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0 */;
+/*!40101 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='NO_AUTO_VALUE_ON_ZERO' */;
+/*!40111 SET @OLD_SQL_NOTES=@@SQL_NOTES, SQL_NOTES=0 */;
+
+--
+-- Table structure for table `parent`
+--
+
+DROP TABLE IF EXISTS `parent`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+ SET character_set_client = utf8mb4 ;
+CREATE TABLE `parent` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `name` varchar(50) DEFAULT NULL,
+  `age` int(11) DEFAULT NULL,
+  `dob` date DEFAULT NULL,
+  `sex` enum('M','F') DEFAULT NULL,
+  `phone_number1` varchar(50) DEFAULT NULL,
+  `phone_number2` varchar(50) DEFAULT NULL,
+  `email` varchar(50) DEFAULT NULL,
+  `is_active` int(1) NOT NULL DEFAULT '1',
+  `created_date` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
+  `address` varchar(2000) DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=11 DEFAULT CHARSET=utf8;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `parent`
+--
+
+LOCK TABLES `parent` WRITE;
+/*!40000 ALTER TABLE `parent` DISABLE KEYS */;
+INSERT INTO `parent` VALUES (1,'Azeez',32,'1987-02-05','M','9620897195',NULL,NULL,0,'2018-11-21 09:04:48','Erumad'),(2,'Rashida',26,'1987-02-05','F','9620897195',NULL,NULL,0,'2018-11-21 09:04:48','Erumad'),(3,'Basheer',32,'1987-02-05','M','9620897195',NULL,NULL,0,'2018-11-21 08:49:52','Erumad'),(4,'Bushara',26,'1987-02-05','F','9620897195',NULL,NULL,0,'2018-11-21 08:49:52','Erumad'),(5,'Basheer',32,'1987-02-05','M','9620897195',NULL,NULL,0,'2018-11-21 08:51:24','Erumad'),(6,'Bushara',26,'1987-02-05','F','9620897195',NULL,NULL,0,'2018-11-21 08:51:24','Erumad'),(7,'John',40,'1978-11-21','M','7897987979','77987987','khkjhh',0,'2018-11-21 12:08:05','Erumad\n643239'),(8,'Lilly',35,'1987-11-29','F','77879798','7887','add',0,'2018-11-21 12:08:05','Erumad\nVettuvadi'),(9,'Azeez',32,'2018-12-15','M','878','786','',0,'2018-12-01 09:26:45','erumad'),(10,'Rashida',27,'2018-12-06','F','123','123','',0,'2018-12-01 09:26:45','emd');
+/*!40000 ALTER TABLE `parent` ENABLE KEYS */;
+UNLOCK TABLES;
+/*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
+
+/*!40101 SET SQL_MODE=@OLD_SQL_MODE */;
+/*!40014 SET FOREIGN_KEY_CHECKS=@OLD_FOREIGN_KEY_CHECKS */;
+/*!40014 SET UNIQUE_CHECKS=@OLD_UNIQUE_CHECKS */;
+/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
+/*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
+/*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
+/*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
+
+-- Dump completed on 2018-12-28 21:54:05

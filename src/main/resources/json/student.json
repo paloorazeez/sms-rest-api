@@ -1,0 +1,37 @@
+{
+  "id": 7,
+  "name": "Raju John",
+  "age": 10,
+  "sex": "M",
+  "rollNumber": "2K181001",
+  "address": "erumad\nkonnachal",
+  "dob": "2018-11-21",
+  "phoneNumber": "977987979",
+  "email": "paloorazeez@gmail.com",
+  "parent1": {
+    "id": "",
+    "name": "",
+    "age": "",
+    "sex": "",
+    "phoneNumber1": "",
+    "address": "",
+    "dob": "",
+    "phoneNumber2": "",
+    "email": ""
+  },
+  "parent2": {
+    "id": "",
+    "name": "",
+    "age": "",
+    "sex": "",
+    "phoneNumber1": "",
+    "address": "",
+    "dob": "",
+    "phoneNumber2": "",
+    "email": ""
+  },
+  "schoolClass": {
+    "id": 9,
+    "name": "2nd Std"
+  }
+}
